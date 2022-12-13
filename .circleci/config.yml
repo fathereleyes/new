@@ -32,7 +32,7 @@ jobs: # basic units of work in a run
 
       - run:
           name: "mohamed"
-          command: echo ${mohamed}
+          command: echo ${CONTEXT-ENV-VAR}
       - run:
           name: "Print an env var stored in a Context"
           command: echo ${CONTEXT_ENV_VAR}
