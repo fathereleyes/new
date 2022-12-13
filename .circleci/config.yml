@@ -7,7 +7,7 @@ jobs: # basic units of work in a run
       - image: cimg/node:18.11.0
         auth:
           username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKERHUB_PASSWORD # context / project UI env-var reference
     steps: # steps that comprise the `build` job
       - checkout # check out source code to working directory
       # Run a step to setup an environment variable
@@ -28,7 +28,11 @@ jobs: # basic units of work in a run
           command: echo ${MY_ENV_VAR}
       - run:
           name: "Print an env var stored in the Project"
-          command: echo ${PROJECT_ENV_VAR}
+          command: echo ${PROJECT_ENV_VARdgsgds
+
+      - run:
+          name: "mohamed"
+          command: echo ${mohamed}
       - run:
           name: "Print an env var stored in a Context"
           command: echo ${CONTEXT_ENV_VAR}
